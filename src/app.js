@@ -6,7 +6,10 @@ const app = express();
 const port = 3000;
 
 const usersController = new UsersController();
-
+const userRouter = express.Router();
+const postRouter = express.Router();
+app.use("/api/v1/users", userRouter);
+app.use("/api/v1/posts", postRouter);
 app.get("/api/v1/users", usersController.getAllUsers);
 
 app.get("/api/v1/users/:id", usersController.getUsersById);

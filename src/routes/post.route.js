@@ -35,7 +35,7 @@ app.put("/api/v1/posts/:postId", (req, res) => {
     // fs.writeFileSync('./posts.json', JSON.stringify(posts));
     return res.json(posts[postIndex]);
   } else {
-    return res.status(404).json({ error: "Post not found" });
+    return res.status(404).json({ error: "Post not foundd" });
   }
 });
 

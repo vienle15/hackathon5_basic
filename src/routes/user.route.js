@@ -47,7 +47,7 @@ app.delete("/api/v1/users", checkUserExists, (req, res) => {
   const email = req.body.email;
   const userIndex = usersData.findIndex((user) => user.email === email);
   if (userIndex === -1) {
-    return res.status(404).json({ message: "Người dùng không tồn tại" });
+    return res.status(404).json({ message: "Người dùng không tồn tạii" });
   }
   usersData.splice(userIndex, 1);
 

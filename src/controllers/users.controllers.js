@@ -30,7 +30,7 @@ class UsersController {
     listUsers.push(newUser);
     fs.writeFileSync("./src/models/users.json", JSON.stringify(listUsers));
     res.status(201).json({
-      message: "User created successfully",
+      message: "User created successfull",
       data: newUser,
     });
   }
